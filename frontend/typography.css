@@ -1,0 +1,67 @@
+/* Larger desktop typography for easier reading during project reviews. */
+@media (min-width: 761px) {
+  body { font-size: 14px; }
+  .brand { font-size: 22px; }
+  .brand-icon { font-size: 17px; }
+  .workspace-label { font-size: 10px; }
+  .side-nav a { font-size: 13px; }
+  .nav-count { font-size: 10px; }
+  .sidebar-status b { font-size: 12px; }
+  .sidebar-status small { font-size: 11px; }
+  .sidebar-note { font-size: 9px; }
+  .breadcrumb { font-size: 12px; }
+  .demo-pill { font-size: 10px; }
+  .user-avatar { font-size: 12px; }
+  .eyebrow { font-size: 10px; }
+  .eyebrow-small { font-size: 9px; }
+  .welcome h1 { font-size: clamp(30px, 2.1vw, 36px); }
+  .welcome p { font-size: 14px; }
+  .run-button { font-size: 12px; }
+  .play-icon { font-size: 11px; }
+  .demo-notice p { font-size: 11px; }
+  .notice-tag { font-size: 9px; }
+  .metric-top > span:first-child { font-size: 10px; }
+  .metric-card > strong { font-size: 29px; }
+  .metric-foot { font-size: 10px; }
+  .up-indicator { font-size: 9px; }
+  .card-heading h2 { font-size: 16px; }
+  .chart-legend { font-size: 10px; }
+  .chart-empty b { font-size: 12px; }
+  .chart-empty small { font-size: 10px; }
+  .chart-axis { font-size: 9px; }
+  .config-card label { font-size: 11px; }
+  .range-ends { font-size: 9px; }
+  .config-summary span { font-size: 9px; }
+  .config-summary b { font-size: 10px; }
+  .client-count, .model-tag { font-size: 9px; }
+  .client-name { font-size: 11px; }
+  .client-sub { font-size: 9px; }
+  .client-state { font-size: 9px; }
+  .client-sent { font-size: 9px; }
+  .client-foot { font-size: 9px; }
+  .arch-node b, .arch-node small, .architecture-details { font-size: 9px; }
+  .live-state { font-size: 9px; }
+  .log-item b { font-size: 10px; }
+  .log-item b span, .log-item p { font-size: 9px; }
+  .log-empty, .loading-row { font-size: 10px; }
+  .footer { font-size: 9px; }
+  .dialog-inner p { font-size: 13px; }
+  .dialog-inner code { font-size: 11px; }
+}
+
+.phase-controls{display:grid;grid-template-columns:minmax(150px,1fr) auto;align-items:end;gap:8px;margin-top:18px;padding-top:12px;border-top:1px solid #edf1ef}
+.phase-controls label{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#607372;font-size:11px;font-weight:600}
+.phase-controls input{width:78px;height:34px;border:1px solid #dce5e2;border-radius:5px;padding:0 8px;color:#1b3035;font:inherit}
+.phase-controls button{min-height:34px;border:0;border-radius:5px;padding:0 12px;background:#258a78;color:#fff;font:600 11px var(--sans);cursor:pointer}
+.phase-controls button:disabled{opacity:.55;cursor:wait}
+.phase-status{grid-column:1/-1;color:#899896;font-size:10px;line-height:1.5}
+.phase-result{display:block;margin-top:12px}
+.phase-result[hidden]{display:none!important}
+.phase-summary{margin:0 0 10px;padding:9px 10px;border-radius:5px;background:#f0f6f3;color:#3a6e60;font-size:11px;font-weight:600;line-height:1.5}
+.phase-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.phase-card{min-width:0;padding:9px;border:1px solid #e8eeeb;border-radius:6px;background:#fff}
+.phase-card h3{min-height:28px;margin:0 0 7px;color:#40575a;font-size:11px;line-height:1.35}
+.phase-card img{display:block;width:100%;height:140px;object-fit:contain;border-radius:4px;background:#f4f7f6}
+.phase-card p{margin:7px 0 0;color:#77898a;font-size:10px;line-height:1.5}
+@media(max-width:1100px){.phase-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.phase-controls{grid-template-columns:1fr 1fr}.phase-controls label{grid-column:1/-1}.phase-controls button{min-height:38px}.phase-status{font-size:11px}.phase-gallery{grid-template-columns:1fr}.phase-card img{height:180px}}
